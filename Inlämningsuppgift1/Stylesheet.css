@@ -1,20 +1,21 @@
-.grid-container{
+.grid-container {
   display: grid;
+  height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 3fr 0.5fr;
-  grid-template-areas: 
-  "header header header header header"
-  "article article article article article"
-  "footer footer footer footer footer"
+  grid-template-areas:
+    "header header header header header"
+    "article article article article article"
+    "footer footer footer footer footer";
 }
 
-.header{
+.header {
   background-color: #a53f53;
   grid-column: span 5;
   grid-area: header;
 }
 
-.vertical{
+.vertical {
   border-left: 1px solid black;
   height: 50px;
   position: absolute;
@@ -22,79 +23,78 @@
   margin-top: 1rem;
 }
 
-.header img{
+.header img {
   float: left;
   margin-left: 350px;
   margin-top: 9px;
 }
 
-.header img ul{
+.header img ul {
   list-style: none;
   grid-column: span 2;
 }
 
-#navbar ul li{
+#navbar ul li {
   color: #000000;
   display: inline-block;
   padding: 1rem;
 }
 
 #navbar {
-float: left;
-margin-left: 50px;
+  float: left;
+  margin-left: 50px;
 }
 
-#navbar ul li a{
-  color:#ffffff;
+#navbar ul li a {
+  color: #ffffff;
   text-decoration: none;
   font-size: 20px;
 }
 
-#Bonus{
+#Bonus {
   float: left;
   margin-left: 600px;
   margin-top: -70px;
 }
-.grid-articles{
+.grid-articles {
   grid-column: span 5;
   grid-area: article;
 }
 
-#image{
+#image {
   width: 100%;
   height: 750px;
   position: relative;
   z-index: 0;
 }
 
-#inner{
+#inner {
   position: absolute;
   z-index: 1;
   top: 20rem;
   right: 35rem;
 }
 
-#iphonesearch{
+#iphonesearch {
   visibility: hidden;
- }
+}
 
-#test{
+#test {
   position: relative;
   z-index: 0;
-  display:block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
   height: 500px;
 }
 
-#test:hover{
+#test:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
-  
 }
 
-#innertext{
+#innertext {
   position: absolute;
   z-index: 1;
   top: 55rem;
@@ -102,46 +102,46 @@ margin-left: 50px;
   opacity: 75%;
 }
 
-.footer{
+.footer {
   grid-column: span 5;
   grid-row: 4/8;
-  background-color:#a53f53 ;
+  background-color: #a53f53;
   grid-area: footer;
 }
 
-#Test{
+#Test {
   padding: 1em 1em;
   list-style: none;
   margin-left: 500px;
   float: left;
 }
 
-#secondFooterList{
+#secondFooterList {
   float: left;
   padding: 1em 1em;
   list-style: none;
   margin-left: 100px;
 }
 
-#footerNavbar ul li a{
+#footerNavbar ul li a {
   text-decoration: none;
   color: aliceblue;
   font-size: 20px;
 }
 
-#facebook{
+#facebook {
   float: right;
   margin-top: 20px;
   margin-right: 200px;
 }
 
-#instagram{
+#instagram {
   float: right;
   margin-top: 20px;
 }
 
-#explorepic{
-  display:block;
+#explorepic {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 75%;
@@ -149,378 +149,391 @@ margin-left: 50px;
   border-radius: 15px;
 }
 
-.exploretext{
+.exploretext {
   font-size: 45px;
   color: #080808;
 }
 
-#paristext{
+#paristext {
   position: absolute;
   top: 10rem;
   left: 18rem;
-
 }
 
-#newyorktext{
+#newyorktext {
   position: absolute;
   top: 38rem;
   left: 18rem;
 }
 
-#miamitext{
+#miamitext {
   position: absolute;
   top: 65rem;
   left: 18rem;
 }
 
-#dubaitext{
+#dubaitext {
   position: absolute;
   top: 95rem;
   left: 18rem;
 }
 
-#clouds{
+#clouds {
   width: 100%;
   height: 400px;
 }
 
-#membertext{
+#membertext {
   font-size: 50px;
-  color:black;
+  color: black;
   position: absolute;
   top: 15rem;
   left: 25rem;
 }
 
+#memberJoin {
+  text-align: center;
+  font-size: 25px;
+}
 
+#join {
+  margin-left: 50rem;
+  margin-top: 2rem;
+}
+
+#credits {
+  float: left;
+  width: auto;
+  height: 300px;
+  margin-top: 10rem;
+  margin-left: 25rem;
+}
+
+#creditsText {
+  float: left;
+  font-size: 25px;
+  margin-top: 6rem;
+}
 
 /*Iphone SE size code*/
-@media only screen and (max-width:400px){
-  .header{
+@media only screen and (max-width: 400px) {
+  .header {
     background-color: #a53f53;
     grid-area: "header";
   }
 
-  .grid-container{
-      grid-template-columns: 0.2fr;
-      grid-template-rows: 0.4fr 3fr 0.2fr;
-      grid-template-areas: 
+  .grid-container {
+    grid-template-columns: 0.2fr;
+    grid-template-rows: 0.4fr 3fr 0.2fr;
+    grid-template-areas:
       "header"
       "article"
-      "footer"  
+      "footer";
   }
 
-  .vertical{
+  .vertical {
     display: none;
   }
 
-  .header img{
+  .header img {
     float: left;
     margin-left: 20px;
     margin-top: 9px;
   }
-  
+
   #navbar {
     margin-left: 50px;
     margin-top: -10px;
-    }
-    
-    #navbar ul li a{
-      color:#ffffff;
-      text-decoration: none;
-      font-size: 15px;
-    }
+  }
 
-    #navbar ul li{
-      color: #000000;
-      display:table;
-    }
+  #navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+  }
 
-    #Bonus{
-      display: table;
-      float: left;
-      margin-left: 1px;
-      margin-top: 5px;
-    }
+  #navbar ul li {
+    color: #000000;
+    display: table;
+  }
 
-  .img-wrapper{
+  #Bonus {
+    display: table;
+    float: left;
+    margin-left: 1px;
+    margin-top: 5px;
+  }
+
+  .img-wrapper {
     max-width: 100%;
     height: auto;
     position: relative;
     z-index: 0;
   }
 
-  #inner{
+  #inner {
     display: none;
   }
 
-  #innertext{
+  #innertext {
     display: none;
   }
 
-  #image{
-    max-width: 100%; 
+  #image {
+    max-width: 100%;
     height: 600px;
     position: relative;
     z-index: 0;
   }
 
-  #iphonesear{
-   visibility: visible;
-   display: inline;
-   position: absolute;
-   z-index: 0;
-   top: 10rem;
-   left: 1rem;
+  #iphonesear {
+    visibility: visible;
+    display: inline;
+    position: absolute;
+    z-index: 0;
+    top: 10rem;
+    left: 1rem;
   }
 
-  #test{
+  #test {
     position: relative;
     z-index: 0;
     width: 100%;
     height: 500px;
   }
 
-  #explorepic{
+  #explorepic {
     width: 100%;
     height: 300px;
   }
 
-  .exploretext{
+  .exploretext {
     font-size: 25px;
     color: #080808;
   }
-  
-  #paristext{
+
+  #paristext {
     position: absolute;
     top: 11rem;
     left: 1rem;
-  
   }
-  
-  #newyorktext{
+
+  #newyorktext {
     position: absolute;
     top: 30rem;
     left: 1rem;
   }
-  
-  #miamitext{
+
+  #miamitext {
     position: absolute;
     top: 49rem;
     left: 1rem;
   }
-  
-  #dubaitext{
+
+  #dubaitext {
     position: absolute;
     top: 68rem;
     left: 1rem;
   }
 
-  #membertext{
+  #membertext {
     font-size: 35px;
-    color:black;
+    color: black;
     position: absolute;
     top: 9rem;
     left: 1rem;
   }
 
-  .footer{
-    background-color:#a53f53 ;
+  .footer {
+    background-color: #a53f53;
     grid-area: footer;
   }
-  
-  #Test{
+
+  #Test {
     list-style: none;
     margin-left: 250px;
     float: left;
   }
 
-  
-  #secondFooterList{
+  #secondFooterList {
     float: left;
     list-style: none;
     margin-left: 250px;
-    
   }
-  
-  #footerNavbar ul li a{
+
+  #footerNavbar ul li a {
     text-decoration: none;
     color: aliceblue;
     font-size: 20px;
   }
 
-  #facebook{
+  #facebook {
     float: left;
     margin-top: -70px;
     margin-left: 50px;
   }
-  
-  #instagram{
+
+  #instagram {
     float: left;
     margin-top: -70px;
   }
 }
 
 /*Ipad Air size code*/
-@media only screen and (max-width:820px) and (min-width: 401px){
-  .header{
+@media only screen and (max-width: 820px) and (min-width: 401px) {
+  .header {
     background-color: #a53f53;
     grid-area: "header";
   }
-  
-  .grid-container{
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 2.5fr 0.5fr;
-      grid-template-areas: 
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2.5fr 0.5fr;
+    grid-template-areas:
       "header"
       "article"
-      "footer"  
+      "footer";
   }
 
-  .vertical{
-   margin-top: 6rem;
-   margin-left: 30rem;
+  .vertical {
+    margin-top: 6rem;
+    margin-left: 30rem;
   }
 
-  .header img{
+  .header img {
     float: left;
     margin-left: 10px;
     margin-top: 10px;
   }
 
-  #navbar ul li{
+  #navbar ul li {
     color: #000000;
     display: inline-block;
     padding: 1rem;
   }
-  
+
   #navbar {
-  float: left;
-  margin-left: 90px;
+    float: left;
+    margin-left: 90px;
   }
-  
-  #navbar ul li a{
-    color:#ffffff;
+
+  #navbar ul li a {
+    color: #ffffff;
     text-decoration: none;
     font-size: 25px;
   }
-  
-  #Bonus{
+
+  #Bonus {
     float: left;
     margin-left: 500px;
     margin-top: -80px;
   }
-  
-  #inner{
-    visibility: visible;
-   display: inline;
-   position: absolute;
-   z-index: 0;
-   top: 20rem;
-   left: 1.5rem;
-  }
 
-  #innertext{
+  #inner {
+    visibility: visible;
+    display: inline;
+    position: absolute;
+    z-index: 0;
+    top: 20rem;
     left: 1.5rem;
   }
 
-  #image{
-    max-width: 100%; 
+  #innertext {
+    left: 1.5rem;
+  }
+
+  #image {
+    max-width: 100%;
     height: 600px;
     position: relative;
     z-index: 0;
   }
 
-  #iphonesear{
-   display: none;
+  #iphonesear {
+    display: none;
   }
 
-  #test{
+  #test {
     position: relative;
     z-index: 0;
     width: 100%;
     height: 500px;
   }
-  
-  #Test{
+
+  #Test {
     list-style: none;
     margin-left: 250px;
     float: left;
   }
-  
-  .footer{
-    background-color:#a53f53 ;
+
+  .footer {
+    background-color: #a53f53;
     grid-area: footer;
   }
 
-  #secondFooterList{
+  #secondFooterList {
     float: left;
     list-style: none;
     margin-left: 150px;
   }
-  
-  #footerNavbar ul li a{
+
+  #footerNavbar ul li a {
     text-decoration: none;
     color: aliceblue;
     font-size: 20px;
   }
 
-  #facebook{
+  #facebook {
     float: left;
     margin-top: -50px;
     margin-left: 80px;
   }
-  
-  #instagram{
+
+  #instagram {
     float: left;
     margin-left: 30px;
     margin-top: -50px;
   }
 
-  #explorepic{
+  #explorepic {
     width: 100%;
     height: 350px;
   }
 
-  .exploretext{
+  .exploretext {
     font-size: 35spx;
     color: #080808;
   }
-  
-  #paristext{
+
+  #paristext {
     position: absolute;
     top: 19rem;
     left: 2rem;
-  
   }
-  
-  #newyorktext{
+
+  #newyorktext {
     position: absolute;
     top: 41rem;
     left: 2rem;
   }
-  
-  #miamitext{
+
+  #miamitext {
     position: absolute;
     top: 63rem;
     left: 2rem;
   }
-  
-  #dubaitext{
+
+  #dubaitext {
     position: absolute;
     top: 85rem;
     left: 2rem;
   }
 
-  #membertext{
+  #membertext {
     font-size: 55px;
-    color:black;
+    color: black;
     position: absolute;
     top: 9rem;
     left: 1rem;
   }
 }
- 
-
-
-
