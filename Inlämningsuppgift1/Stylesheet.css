@@ -1,0 +1,526 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr 0.5fr;
+  grid-template-areas: 
+  "header header header header header"
+  "article article article article article"
+  "footer footer footer footer footer"
+}
+
+.header{
+  background-color: #a53f53;
+  grid-column: span 5;
+  grid-area: header;
+}
+
+.vertical{
+  border-left: 1px solid black;
+  height: 50px;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 1rem;
+}
+
+.header img{
+  float: left;
+  margin-left: 350px;
+  margin-top: 9px;
+}
+
+.header img ul{
+  list-style: none;
+  grid-column: span 2;
+}
+
+#navbar ul li{
+  color: #000000;
+  display: inline-block;
+  padding: 1rem;
+}
+
+#navbar {
+float: left;
+margin-left: 50px;
+}
+
+#navbar ul li a{
+  color:#ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#Bonus{
+  float: left;
+  margin-left: 600px;
+  margin-top: -70px;
+}
+.grid-articles{
+  grid-column: span 5;
+  grid-area: article;
+}
+
+#image{
+  width: 100%;
+  height: 750px;
+  position: relative;
+  z-index: 0;
+}
+
+#inner{
+  position: absolute;
+  z-index: 1;
+  top: 20rem;
+  right: 35rem;
+}
+
+#iphonesearch{
+  visibility: hidden;
+ }
+
+#test{
+  position: relative;
+  z-index: 0;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 500px;
+}
+
+#test:hover{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  
+}
+
+#innertext{
+  position: absolute;
+  z-index: 1;
+  top: 55rem;
+  right: 35rem;
+  opacity: 75%;
+}
+
+.footer{
+  grid-column: span 5;
+  grid-row: 4/8;
+  background-color:#a53f53 ;
+  grid-area: footer;
+}
+
+#Test{
+  padding: 1em 1em;
+  list-style: none;
+  margin-left: 500px;
+  float: left;
+}
+
+#secondFooterList{
+  float: left;
+  padding: 1em 1em;
+  list-style: none;
+  margin-left: 100px;
+}
+
+#footerNavbar ul li a{
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 20px;
+}
+
+#facebook{
+  float: right;
+  margin-top: 20px;
+  margin-right: 200px;
+}
+
+#instagram{
+  float: right;
+  margin-top: 20px;
+}
+
+#explorepic{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 450px;
+  border-radius: 15px;
+}
+
+.exploretext{
+  font-size: 45px;
+  color: #080808;
+}
+
+#paristext{
+  position: absolute;
+  top: 10rem;
+  left: 18rem;
+
+}
+
+#newyorktext{
+  position: absolute;
+  top: 38rem;
+  left: 18rem;
+}
+
+#miamitext{
+  position: absolute;
+  top: 65rem;
+  left: 18rem;
+}
+
+#dubaitext{
+  position: absolute;
+  top: 95rem;
+  left: 18rem;
+}
+
+#clouds{
+  width: 100%;
+  height: 400px;
+}
+
+#membertext{
+  font-size: 50px;
+  color:black;
+  position: absolute;
+  top: 15rem;
+  left: 25rem;
+}
+
+
+
+/*Iphone SE size code*/
+@media only screen and (max-width:400px){
+  .header{
+    background-color: #a53f53;
+    grid-area: "header";
+  }
+
+  .grid-container{
+      grid-template-columns: 0.2fr;
+      grid-template-rows: 0.4fr 3fr 0.2fr;
+      grid-template-areas: 
+      "header"
+      "article"
+      "footer"  
+  }
+
+  .vertical{
+    display: none;
+  }
+
+  .header img{
+    float: left;
+    margin-left: 20px;
+    margin-top: 9px;
+  }
+  
+  #navbar {
+    margin-left: 50px;
+    margin-top: -10px;
+    }
+    
+    #navbar ul li a{
+      color:#ffffff;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    #navbar ul li{
+      color: #000000;
+      display:table;
+    }
+
+    #Bonus{
+      display: table;
+      float: left;
+      margin-left: 1px;
+      margin-top: 5px;
+    }
+
+  .img-wrapper{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 0;
+  }
+
+  #inner{
+    display: none;
+  }
+
+  #innertext{
+    display: none;
+  }
+
+  #image{
+    max-width: 100%; 
+    height: 600px;
+    position: relative;
+    z-index: 0;
+  }
+
+  #iphonesear{
+   visibility: visible;
+   display: inline;
+   position: absolute;
+   z-index: 0;
+   top: 10rem;
+   left: 1rem;
+  }
+
+  #test{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 500px;
+  }
+
+  #explorepic{
+    width: 100%;
+    height: 300px;
+  }
+
+  .exploretext{
+    font-size: 25px;
+    color: #080808;
+  }
+  
+  #paristext{
+    position: absolute;
+    top: 11rem;
+    left: 1rem;
+  
+  }
+  
+  #newyorktext{
+    position: absolute;
+    top: 30rem;
+    left: 1rem;
+  }
+  
+  #miamitext{
+    position: absolute;
+    top: 49rem;
+    left: 1rem;
+  }
+  
+  #dubaitext{
+    position: absolute;
+    top: 68rem;
+    left: 1rem;
+  }
+
+  #membertext{
+    font-size: 35px;
+    color:black;
+    position: absolute;
+    top: 9rem;
+    left: 1rem;
+  }
+
+  .footer{
+    background-color:#a53f53 ;
+    grid-area: footer;
+  }
+  
+  #Test{
+    list-style: none;
+    margin-left: 250px;
+    float: left;
+  }
+
+  
+  #secondFooterList{
+    float: left;
+    list-style: none;
+    margin-left: 250px;
+    
+  }
+  
+  #footerNavbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+  }
+
+  #facebook{
+    float: left;
+    margin-top: -70px;
+    margin-left: 50px;
+  }
+  
+  #instagram{
+    float: left;
+    margin-top: -70px;
+  }
+}
+
+/*Ipad Air size code*/
+@media only screen and (max-width:820px) and (min-width: 401px){
+  .header{
+    background-color: #a53f53;
+    grid-area: "header";
+  }
+  
+  .grid-container{
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 2.5fr 0.5fr;
+      grid-template-areas: 
+      "header"
+      "article"
+      "footer"  
+  }
+
+  .vertical{
+   margin-top: 6rem;
+   margin-left: 30rem;
+  }
+
+  .header img{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  #navbar ul li{
+    color: #000000;
+    display: inline-block;
+    padding: 1rem;
+  }
+  
+  #navbar {
+  float: left;
+  margin-left: 90px;
+  }
+  
+  #navbar ul li a{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  #Bonus{
+    float: left;
+    margin-left: 500px;
+    margin-top: -80px;
+  }
+  
+  #inner{
+    visibility: visible;
+   display: inline;
+   position: absolute;
+   z-index: 0;
+   top: 20rem;
+   left: 1.5rem;
+  }
+
+  #innertext{
+    left: 1.5rem;
+  }
+
+  #image{
+    max-width: 100%; 
+    height: 600px;
+    position: relative;
+    z-index: 0;
+  }
+
+  #iphonesear{
+   display: none;
+  }
+
+  #test{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 500px;
+  }
+  
+  #Test{
+    list-style: none;
+    margin-left: 250px;
+    float: left;
+  }
+  
+  .footer{
+    background-color:#a53f53 ;
+    grid-area: footer;
+  }
+
+  #secondFooterList{
+    float: left;
+    list-style: none;
+    margin-left: 150px;
+  }
+  
+  #footerNavbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+  }
+
+  #facebook{
+    float: left;
+    margin-top: -50px;
+    margin-left: 80px;
+  }
+  
+  #instagram{
+    float: left;
+    margin-left: 30px;
+    margin-top: -50px;
+  }
+
+  #explorepic{
+    width: 100%;
+    height: 350px;
+  }
+
+  .exploretext{
+    font-size: 35spx;
+    color: #080808;
+  }
+  
+  #paristext{
+    position: absolute;
+    top: 19rem;
+    left: 2rem;
+  
+  }
+  
+  #newyorktext{
+    position: absolute;
+    top: 41rem;
+    left: 2rem;
+  }
+  
+  #miamitext{
+    position: absolute;
+    top: 63rem;
+    left: 2rem;
+  }
+  
+  #dubaitext{
+    position: absolute;
+    top: 85rem;
+    left: 2rem;
+  }
+
+  #membertext{
+    font-size: 55px;
+    color:black;
+    position: absolute;
+    top: 9rem;
+    left: 1rem;
+  }
+}
+ 
+
+
+
