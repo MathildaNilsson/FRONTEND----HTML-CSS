@@ -369,6 +369,7 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
+
   .footer {
     background-color: #a53f53;
     grid-area: footer;
@@ -558,7 +559,31 @@
     font-size: 55px;
     color: black;
     position: absolute;
-    top: 9rem;
+    text-align: center;
+    top: 12rem;
     left: 1rem;
+  }
+
+  #memberJoin {
+    font-size: 35px;
+  }
+
+  #join {
+    margin-left: -18rem;
+  }
+
+  #credits {
+    width: auto;
+    height: 350px;
+    margin-left: 12rem;
+    margin-top: 9rem;
+  }
+
+  #creditsText {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 }
