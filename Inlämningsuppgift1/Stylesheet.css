@@ -215,6 +215,32 @@
   margin-top: 6rem;
 }
 
+#checkIn {
+  width: 200px;
+  border: 10px solid rgb(156, 11, 71);
+  padding: 25px;
+  margin: 20px;
+  text-align: center;
+  font-size: 25px;
+  float: right;
+  margin-right: 55rem;
+  margin-top: -8rem;
+}
+#passport {
+  width: auto;
+  height: 200px;
+  margin-top: 20rem;
+  margin-left: 20rem;
+  border-radius: 10%;
+}
+
+#travelInfo {
+  float: right;
+  margin-top: 21rem;
+  margin-right: 35rem;
+  font-size: 25px;
+}
+
 /*Iphone SE size code*/
 @media only screen and (max-width: 400px) {
   .header {
