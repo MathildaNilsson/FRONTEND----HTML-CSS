@@ -207,12 +207,33 @@
   height: 300px;
   margin-top: 10rem;
   margin-left: 25rem;
+  border-radius: 5%;
+}
+
+#lounge {
+  float: right;
+  width: auto;
+  height: 250px;
+  margin-top: 18rem;
+  margin-right: 25rem;
+  margin-bottom: 5rem;
+  border-radius: 5%;
+}
+
+#loungeText {
+  float: left;
+  font-size: 25px;
+  margin-top: 6rem;
+  margin-bottom: -5rem;
+  margin-left: 25rem;
 }
 
 #creditsText {
   float: left;
   font-size: 25px;
   margin-top: 6rem;
+  margin-bottom: -5rem;
+  margin-left: 2rem;
 }
 
 #checkin {
@@ -264,13 +285,12 @@ hr {
   float: right;
   margin-right: 55rem;
   margin-top: -13rem;
-  margin-bottom: ;
 }
 #passport {
   width: auto;
   height: 200px;
   margin-top: 13rem;
-  margin-left: -17rem;
+  margin-left: -14rem;
   margin-bottom: 5rem;
   border-radius: 10%;
 }
