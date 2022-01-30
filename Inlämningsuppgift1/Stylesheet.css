@@ -79,7 +79,7 @@
   visibility: hidden;
 }
 
-#test {
+#businessClassPic {
   position: relative;
   z-index: 0;
   display: block;
@@ -89,7 +89,7 @@
   height: 500px;
 }
 
-#test:hover {
+#businessClassPic:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
@@ -372,7 +372,7 @@ hr {
     left: 1rem;
   }
 
-  #test {
+  #businessClassPic {
     position: relative;
     z-index: 0;
     width: 100%;
@@ -599,7 +599,7 @@ hr {
     display: none;
   }
 
-  #test {
+  #businessClassPic {
     position: relative;
     z-index: 0;
     width: 100%;
