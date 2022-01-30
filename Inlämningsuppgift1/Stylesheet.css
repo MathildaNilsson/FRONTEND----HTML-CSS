@@ -61,7 +61,7 @@
   grid-area: article;
 }
 
-#image {
+#beach {
   width: 100%;
   height: 750px;
   position: relative;
@@ -109,7 +109,7 @@
   grid-area: footer;
 }
 
-#Test {
+#firstFooterList {
   padding: 1em 1em;
   list-style: none;
   margin-left: 500px;
@@ -356,14 +356,14 @@ hr {
     display: none;
   }
 
-  #image {
+  #beach {
     max-width: 100%;
     height: 600px;
     position: relative;
     z-index: 0;
   }
 
-  #iphonesear {
+  #iphonesearch {
     visibility: visible;
     display: inline;
     position: absolute;
@@ -508,7 +508,7 @@ hr {
     margin-top: 4rem;
   }
 
-  #Test {
+  #firstFooterList {
     list-style: none;
     margin-left: 250px;
     float: left;
@@ -588,14 +588,14 @@ hr {
     left: 1.5rem;
   }
 
-  #image {
+  #beach {
     max-width: 100%;
     height: 600px;
     position: relative;
     z-index: 0;
   }
 
-  #iphonesear {
+  #iphonesearch {
     display: none;
   }
 
@@ -606,7 +606,7 @@ hr {
     height: 500px;
   }
 
-  #Test {
+  #firstFooterList {
     list-style: none;
     margin-left: 250px;
     float: left;
