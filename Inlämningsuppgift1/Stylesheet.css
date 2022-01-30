@@ -305,7 +305,6 @@ hr {
 /*Iphone SE size code*/
 @media only screen and (max-width: 375px) {
   .header {
-    background-color: #a53f53;
     grid-area: "header";
   }
 
@@ -333,20 +332,11 @@ hr {
     margin-top: -10px;
   }
 
-  #navbar ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 15px;
-  }
-
   #navbar ul li {
-    color: #000000;
     display: table;
   }
 
   #Bonus {
-    display: table;
-    float: left;
     margin-left: 1px;
     margin-top: -18px;
   }
@@ -395,53 +385,41 @@ hr {
   }
 
   .exploretext {
-    font-size: 25px;
-    color: #080808;
+    font-size: 35px;
   }
 
   #paristext {
-    position: absolute;
     top: 5rem;
     left: 1rem;
   }
 
   #newyorktext {
-    position: absolute;
     top: 25rem;
     left: 1rem;
   }
 
   #miamitext {
-    position: absolute;
     top: 43rem;
     left: 1rem;
   }
 
   #dubaitext {
-    position: absolute;
     top: 62rem;
     left: 1rem;
   }
 
   #clouds {
-    width: 100%;
     height: 250px;
   }
 
   #membertext {
     font-size: 35px;
-    color: black;
-    position: absolute;
     top: 9rem;
     left: 1rem;
   }
 
-  #memberJoin {
-    font-size: 20px;
-  }
-
   #join {
-    margin-left: -12rem;
+    margin-left: -13rem;
   }
 
   #credits {
@@ -449,13 +427,13 @@ hr {
     height: 300px;
     margin-left: 2rem;
     margin-top: 8rem;
-    border-radius: 5%;
   }
 
   #creditsText {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: -1rem;
+    margin-left: 1rem;
   }
 
   #lounge {
@@ -464,7 +442,6 @@ hr {
     width: 85%;
     height: 200px;
     margin-top: 3rem;
-    border-radius: 5%;
     margin-bottom: 1rem;
     margin-right: 0rem;
   }
@@ -490,64 +467,43 @@ hr {
   }
 
   #bookingCode {
-    font-size: 20px;
-    color: grey;
     margin-left: 1rem;
-    margin-bottom: -4rem;
-    margin-top: 5rem;
   }
 
   #lastname {
-    font-size: 20px;
-    color: grey;
     margin-left: 1rem;
-    margin-bottom: -4rem;
-    margin-top: 5rem;
   }
 
   hr {
-    border-top: 1px solid black;
-    width: 200px;
+    width: 250px;
     margin-left: 1rem;
-    margin-top: 5rem;
     margin-right: 0rem;
   }
 
   #checkinButton {
-    float: left;
     margin-left: 1rem;
   }
 
   #checkTravelDocs {
-    width: 200px;
-    border: 10px solid rgb(156, 11, 71);
-    padding: 25px;
     margin: 20px;
-    text-align: center;
-    font-size: 25px;
     float: left;
     margin-top: -3rem;
   }
 
   #passport {
-    max-width: 100%;
     height: 200px;
-    margin-top: 13rem;
     margin-left: -7rem;
-    margin-bottom: 5rem;
-    border-radius: 10%;
+    margin-bottom: 4rem;
   }
 
   #travelInfo {
     float: left;
     margin-top: -23rem;
-    font-size: 25px;
-    width: 20rem;
+    width: 22rem;
     margin-right: 0rem;
   }
 
   .footer {
-    background-color: #a53f53;
     grid-area: footer;
     margin-top: 4rem;
   }
@@ -562,12 +518,6 @@ hr {
     float: left;
     list-style: none;
     margin-left: 250px;
-  }
-
-  #footerNavbar ul li a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 20px;
   }
 
   #facebook {
@@ -707,7 +657,6 @@ hr {
   }
 
   #dubaitext {
-
     top: 73rem;
     left: 2rem;
   }
@@ -748,7 +697,6 @@ hr {
     width: auto;
     height: 350px;
     margin-top: 3rem;
-    border-radius: 5%;
     margin-bottom: 1rem;
     margin-right: 0rem;
   }
@@ -759,7 +707,6 @@ hr {
     margin-top: 1rem;
     margin-bottom: -1rem;
     margin-left: 5rem;
-    bottom: rem;
   }
 
   #checkin {
@@ -773,7 +720,7 @@ hr {
   }
 
   #bookingCode {
-    margin-left: 1rem; 
+    margin-left: 1rem;
   }
 
   #lastname {
