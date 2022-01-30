@@ -506,9 +506,10 @@ hr {
 
   hr {
     border-top: 1px solid black;
+    width: 200px;
     margin-left: 1rem;
-    width: 20rem;
     margin-top: 5rem;
+    margin-right: 0rem;
   }
 
   #checkinButton {
@@ -541,6 +542,7 @@ hr {
     margin-top: -23rem;
     font-size: 25px;
     width: 20rem;
+    margin-right: 0rem;
   }
 
   .footer {
@@ -760,5 +762,72 @@ hr {
     margin-left: 6rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
+  }
+
+  #checkin {
+    font-size: 40px;
+    margin-left: 1rem;
+  }
+
+  #checkinInfo {
+    font-size: 25px;
+    margin-left: 1rem;
+    margin-top: -2rem;
+    width: 20rem;
+  }
+
+  #bookingCode {
+    font-size: 20px;
+    color: grey;
+    margin-left: 1rem;
+    margin-bottom: -4rem;
+    margin-top: 5rem;
+  }
+
+  #lastname {
+    font-size: 20px;
+    color: grey;
+    margin-left: 1rem;
+    margin-bottom: -4rem;
+    margin-top: 5rem;
+  }
+
+  hr {
+    border-top: 1px solid black;
+    margin-left: 1rem;
+    width: 20rem;
+    margin-top: 5rem;
+  }
+
+  #checkinButton {
+    float: left;
+    margin-left: 1rem;
+  }
+
+  #checkTravelDocs {
+    width: 200px;
+    border: 10px solid rgb(156, 11, 71);
+    padding: 25px;
+    margin: 20px;
+    text-align: center;
+    font-size: 25px;
+    float: left;
+    margin-top: -3rem;
+  }
+
+  #passport {
+    max-width: 100%;
+    height: 200px;
+    margin-top: 13rem;
+    margin-left: -7rem;
+    margin-bottom: 5rem;
+    border-radius: 10%;
+  }
+
+  #travelInfo {
+    float: left;
+    margin-top: -23rem;
+    font-size: 25px;
+    width: 20rem;
   }
 }
